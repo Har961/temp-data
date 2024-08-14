@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 const latestData = data.feeds[0];
-                temperatureElement.textContent = latestData.field1; // Assuming temperature is in field1
-                humidityElement.textContent = latestData.field2; // Assuming humidity is in field2
+                temperatureElement.textContent = latestData.field3; // Assuming temperature is in field1
+                humidityElement.textContent = latestData.field4; // Assuming humidity is in field2
             })
             .catch(error => console.error('Error fetching data:', error));
     }
